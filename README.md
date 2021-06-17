@@ -11,6 +11,18 @@ bundle install
 bundle exec jekyll serve
 ```
 
+## latex
+
+example
+
+```
+$$ \nabla_\boldsymbol{x} J(\boldsymbol{x}) $$
+```
+
+![](/assets/mathjax.png)
+
 ## Reference
 
 [Jekyll](https://jekyllrb.com/)
+
+[Mathjax](https://www.mathjax.org/)
