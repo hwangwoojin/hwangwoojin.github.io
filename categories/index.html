@@ -1,8 +1,6 @@
 ---
 layout: page
-title: Categories
-description: "Categories"
-comments: false
+title: 카테고리
 ---
 
 {% capture site_categories %}{% for tag in site.categories %}{{ tag | first }}{% unless forloop.last %},{% endunless %}{% endfor %}{% endcapture %}
