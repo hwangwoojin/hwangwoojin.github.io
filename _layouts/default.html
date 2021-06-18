@@ -2,6 +2,7 @@
 <html lang="{{ page.lang | default: site.lang | default: "en" }}">
 
   <link href="{{ site.asset_url }}/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon"/>
+
   {%- include head.html -%}
 
   <body>
@@ -9,15 +10,12 @@
     {%- include header.html -%}
 
     <main class="page-content" aria-label="Content">
-      <div class="wrapper">
+      <div class="wrapper" style="margin-top:50px;">
         {{ content }}
       </div>
     </main>
 
     {%- include footer.html -%}
-
-    <!-- latex -->
-    <script aync src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 
   </body>
 
