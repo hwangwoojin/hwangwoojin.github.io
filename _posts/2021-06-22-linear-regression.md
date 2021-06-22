@@ -20,21 +20,51 @@ $$y(x,w) = w_0+\sum_{j=1}^{M-1}w_j\phi_j(x)$$
 
 $$t = y(x,w) + \epsilon$$
 
-여기서 $$y(x, w)$$는 결정론적인 함수이며, $$\epsilon$$은 노이즈 값입니다. 만약 노이즈가 가우시안 분포 $$N(\epsilon\vert 0,\beta^-1))을 따르는 확률변수라면 $$t$$의 분포는 이렇게 쓸수도 있습니다.
+여기서 $$y(x, w)$$는 결정론적인 함수이며, $$\epsilon$$은 노이즈 값입니다.
+
+최대우도추정법을 사용하기 위해 우도함수와 로그우도함수를 구하면 다음과 같습니다.
+
+$$p(t\vert X,w,\beta)=\Pi_{n=1}{N}N(t_n\vert w^T\Phi(x_n),\beta^{-1})$$
+
+$$\ln p(t\vert X,w,\beta)=\Pi_{n=1}{N}\ln N(t_n\vert w^T\Phi(x_n),\beta^{-1}) = \frac{N}{2}\ln\beta-\frac{N}{2}\ln(2\pi)-\beta E_D(w)$$
+
+$$E_D(w) = \frac{1}{2}\sum_{n=1}^N\{t_n-w^T\phi(x_n)\}^2$$
+
+이 때 로그 우도함수를 최대화시키는 $$w$$값은 $$E_D(w)$$로 주어진 오차함수의 제곱합을 최소화시키는 값과 동일하게 됩니다. 이 방법을 **최소제곱법(Least squares method)**이라고 합니다.
+
+만약 노이즈가 가우시안 분포 $$N(\epsilon\vert 0,\beta^-1))을 따르는 확률변수라면 $$t$$의 분포는 이렇게 쓸수도 있습니다.
 
 $$p(t\vert x,w,\beta) = N(t\vert y(x,w),\beta^{-1})$$
 
-이 함수에서 제곱합을 통해 에러함수를 표현하고자 한다면 다음과 같이 사용할 수 있습니다.
+이 함수에서 제곱합을 통해 에러함수를 표현하고자 한다면 다음과 같습니다.
 
 $$E_D(w) = \frac{1}{2}\sum_{n=1}^N(t_n-w^T\phi(x_n),\beta^{-1})$$
-
-최대우도추정법(MLE)을 사용하여 확률변수의 파라미터인 $$x,w$$를 찾을 수도 있는데, 이 때 우도함수를 최대화시키는 $$w$$ 값은 식을 풀어보면 위의 제곱합 에러함수를 최소화시키는 값과 동일하게 됩니다.
 
 $$w$$에 대한 기울기(gradient) 벡터는 다음과 같이 표현할 수 있습니다.
 
 $$\nabla \ln p(t\vert w,\beta)=\sum_{n=1}^N\{t_n-w^T\phi(x_n)\}\phi(x_n)^T)$$
 
 이 때 최적값은 $$W_{ML}=(\phi^T\phi)^{-1}\phi^Tt$$로 구할 수 있습니다. 이 식을 **정규방정식(normal equations)**이라고 합니다.
+
+## 규제화
+
+최소제곱법을 통해 오차함수를 구하는 경우 다음과 같음을 위에서 보였습니다.
+
+$$E_D(w) = \frac{1}{2}\sum_{n=1}^N\{t_n-w^T\phi(x_n)\}^2$$
+
+만약 이 식에 규제화를 적용하고 싶다면 다음과 같이 규제항 $$\lambda E_W(w)$$을 더해주면 됩니다.
+
+$$E_D(w) = \frac{1}{2}\sum_{n=1}^N\{t_n-w^T\phi(x_n)\}^2 + \lambda E_W(w)$$
+
+$$E_D(w) = \frac{1}{2}\sum_{n=1}^N\{t_n-w^T\phi(x_n)\}^2 + \frac{1}{2}\lambda w^Tw$$
+
+이 때 $$w$$의 최적값을 구하면 다음과 같습니다.
+
+$$w = (\lambda I + \phi^T\phi)^{-1}\phi^Tt$$
+
+이를 일반화해서 표현하면 다음과 같습니다.
+
+$$E(w) = \frac{1}{2}\sum_{n=1}^N\{t_n-w^T\phi(x+n)\}^2 + \frac{1}{2}\sum_{j=1}^M\vert w_j\vert^q$$
 
 ## 파이썬 코드로 선형회귀 구현하기
 
