@@ -1,9 +1,9 @@
 ---
 layout: post
-title: 확률분포 (코드)
+title: 확률분포 (파이썬)
 date:   2021-06-22 13:00:00 +0900
 description: 파이썬 코드를 통해 여러 확률분포를 구해보자
-categories: python
+categories: 프로그래머스-인공지능-데브코스
 ---
 
 파이썬 라이브러리인 `scipy`를 통해 여러 분포들을 생성하고 해당 그래프를 그려보도록 하겠습니다.

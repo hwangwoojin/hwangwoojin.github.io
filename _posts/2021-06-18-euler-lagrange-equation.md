@@ -3,7 +3,7 @@ layout: post
 title: 오일러-라그랑주 방정식
 date:   2021-06-18 13:00:00 +0900
 description: 오일러-라그랑주 방정식에 대해 알아보자.
-categories: math
+categories: 프로그래머스-인공지능-데브코스
 ---
 
 **오일러-라그랑주 방정식(Euler-Lagrange equation)**은 범함수의 최솟값을 구하는데 종종 사용됩니다. 이 방정식은 $$x, y(x), y`(x)$$로 정의되어있는 함수 $$G$$에 대해서 다음과 같습니다.

@@ -3,7 +3,7 @@ layout: post
 title: 확률분포
 date:   2021-06-21 14:00:00 +0900
 description: 빈도주의 관점과 베이지안 관점을 통해 확률분포를 구하자
-categories: math
+categories: 프로그래머스-인공지능-데브코스
 ---
 
 ## 밀도 추정

@@ -3,7 +3,7 @@ layout: post
 title:  확률변수
 date:   2021-06-17 18:00:00 +0900
 description: 확률변수, 누적분포함수, 확률밀도함수, 연속확률변수, 확률변수의 함수
-categories: math
+categories: 프로그래머스-인공지능-데브코스
 ---
 
 **확률변수(Random Variable)**란 표본의 집합 $$S$$의 원소 $$e$$를 실수값 $$X(e) = x$$에 대응시키는 함수입니다. 보통 $$X, Y, Z$$와 같이 대문자로 표현합니다.

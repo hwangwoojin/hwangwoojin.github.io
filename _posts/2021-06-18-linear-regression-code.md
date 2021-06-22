@@ -1,9 +1,9 @@
 ---
 layout: post
-title: 선형회귀
+title: 선형회귀 (파이썬)
 date:   2021-06-18 14:00:00 +0900
 description: 파이썬 코드를 통해 선형 회귀 문제를 해결해보자
-categories: python
+categories: 프로그래머스-인공지능-데브코스
 ---
 
 이 글에서는 기본적으로 `matplotlib`, `seaborn`, `numpy`를 사옹합니다.

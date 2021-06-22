@@ -3,7 +3,7 @@ layout: post
 title:  가우시안 분포
 date:   2021-06-18 00:00:00 +0900
 description: 가우시안 분포에 대해서 알아보자
-categories: math
+categories: 프로그래머스-인공지능-데브코스
 ---
 
 **가우시안 분포(Gaussian distribution)**란 다음을 만족하는 분포를 말합니다.

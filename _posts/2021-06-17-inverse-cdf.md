@@ -3,7 +3,7 @@ layout: post
 title: Inverse CDF
 date:   2021-06-17 20:00:00 +0900
 description: 밀도함수로부터 실제 샘플을 만들어내고 싶을 때 사용하는 방법
-categories: math
+categories: 프로그래머스-인공지능-데브코스
 ---
 
 만약 주어진 밀도함수로부터 몇몇 값을 샘플링하고 싶다면 어떻게 해야할까요?
