@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 확률분포 (코드)
-date:   2021-06-18 14:00:00 +0900
+date:   2021-06-22 13:00:00 +0900
 description: 파이썬 코드를 통해 여러 확률분포를 구해보자
 categories: python
 ---
