@@ -6,6 +6,4 @@ description: 살면서 한번이라도 유용했던 사이트들에 대해서 �
 categories: 랜덤글
 ---
 
-**Latex**
-
 [Latex 기호 모음](https://jjycjnmath.tistory.com/117)
