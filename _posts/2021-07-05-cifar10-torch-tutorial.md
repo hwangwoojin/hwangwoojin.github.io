@@ -6,7 +6,7 @@ description: pytorch를 사용하여 CIFAR10 데이터셋을 훈련해보자.
 categories: 프로그래머스-인공지능-데브코스
 ---
 
-[pytorch 공식문서](https://pytorch.org/tutorials/beginner/blitz/cifar10_tutorial.html#sphx-glr-beginner-blitz-cifar10-tutorial-py)를 참고하여 작성하였습니다.
+> [pytorch 공식문서](https://pytorch.org/tutorials/beginner/blitz/cifar10_tutorial.html#sphx-glr-beginner-blitz-cifar10-tutorial-py)를 참고하여 작성하였습니다.
 
 **CIFAR10** 데이터셋은 비행기, 자동차, 새, 고양이, 사슴, 개, 개구리, 말, 배, 트럭으로 총 10개의 클래스를 가지고 있으며 크기는 32x32인 RGB 데이터로 구성되어 있습니다.
 
