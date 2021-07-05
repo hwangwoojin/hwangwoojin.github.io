@@ -1,0 +1,78 @@
+<!-- dirty css -->
+<style>
+/* fix top */
+.site-header {
+  position:fixed;
+  top:0;
+  width:100%;
+  background-color:white;
+  z-index:1;
+}
+
+/* margin for fix top */
+.page-content {
+  margin-top:50px;
+}
+
+/* fadein animation */
+.site-header {
+  display: inline-block;
+  animation: fadein 1s;
+  /* Firefox */
+  -moz-animation: fadein 1s;
+  /* Safari and Chrome */
+  -webkit-animation: fadein 1s;
+  /* Opera */
+  -o-animation: fadein 1s;
+}
+
+.home, .post {
+  display: inline-block;
+  opacity: 0;
+  animation: fadein 1s;
+  animation-delay: 1s;
+  /* Firefox */
+  -moz-animation: fadein 1s;
+  -moz-animation-delay: 1s;
+  /* Safari and Chrome */
+  -webkit-animation: fadein 1s;
+  -webkit-animation-delay: 1s;
+  /* Opera */
+  -o-animation: fadein 1s;
+  -o-animation-delay: 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@-o-keyframes fadein { /* Opera */
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+</style>
