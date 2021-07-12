@@ -1,9 +1,9 @@
 ---
 layout: post
-title: (오일석 기계학습 정리 1) 기계학습 소개
+title: 기계학습 소개
 date:   2021-06-23 15:00:00 +0900
 description: 기계학습이란?
-categories: 프로그래머스-인공지능-데브코스
+categories: 오일석-기계학습
 ---
 
 ## 기계학습이란?

@@ -1,9 +1,9 @@
 ---
 layout: post
-title: (오일석 기계학습 정리 3) 다층 퍼셉트론
+title: 다층 퍼셉트론
 date:   2021-06-25 00:00:00 +0900
 description: 타층 퍼셉트론에 대해 알아보자
-categories: 프로그래머스-인공지능-데브코스
+categories: 오일석-기계학습
 ---
 
 ## 퍼셉트론
